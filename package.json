@@ -1,0 +1,38 @@
+{
+  "name": "@tenp/render",
+  "version": "0.0.1",
+  "description": "nodejs 模板引擎",
+  "main": "lib/render.js",
+  "scripts": {
+    "test": "nyc node_modules/mocha/bin/_mocha --exit ./test/*.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maskletter/tenp-render.git"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "maskletter",
+  "license": "ISC",
+  "files": [
+    "lib",
+    "test"
+  ],
+  "bugs": {
+    "url": "https://github.com/maskletter/tenp-render/issues"
+  },
+  "typings": "lib/render.d.ts",
+  "homepage": "https://github.com/maskletter/tenp-render#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.3",
+    "istanbul": "^0.4.5",
+    "mocha": "^6.0.2",
+    "nyc": "^13.3.0"
+  },
+  "dependencies": {
+    "htmlparser2": "^3.10.1"
+  }
+}

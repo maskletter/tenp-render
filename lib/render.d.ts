@@ -59,7 +59,25 @@ export function template(url: any, html?: any|number, time?: number, component?:
  * @param time 失效时间
  * @param component 是否为组件形式
  */
-export function RefreshTemplate(url: any, html?: any|number, time?: number, component?: any): boolean;
+export function refreshTemplate(url: any, html?: any|number, time?: number, component?: any): boolean;
+
+// /**
+//  * 修改默认指令名称
+//  * @param name 
+//  * @param value 
+//  */
+// export function updateDirective(name: string, value: string): void;
+
+/**
+ * 修改默认指令
+ * @param a 
+ */
+export function updateDirective(a: {
+    for?: string,
+    if?: string,
+    else?: string,
+    elseif?: string
+}): void;
 
 /**
  * 修改render默认配置

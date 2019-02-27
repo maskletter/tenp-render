@@ -1,5 +1,20 @@
 # @tenp/render
-基于nodejs 数据模板引擎 
+基于nodejs 数据模板引擎 <br>
+<a href="https://badge.fury.io/js/%40tenp%render" title="NPM Version Badge" rel="nofollow">
+   <img src="https://badge.fury.io/js/%40tenp%render.svg" height="18">
+</a>
+<a href="https://img.shields.io/badge/node-%3E%3D6-brightgreen.svg" title="Node Limitation" rel="nofollow">
+   <img src="https://img.shields.io/badge/node-%3E%3D6-brightgreen.svg" alt="npm version" height="18">
+</a>
+<a href="https://coveralls.io/github/maskletter/tenp-render" title="Node Limitation" rel="nofollow">
+   <img src="https://coveralls.io/repos/github/maskletter/tenp-render/badge.svg?branch=master" height="18">
+</a>
+<a href="https://travis-ci.org/maskletter/tenp-render" title="Node Limitation" rel="nofollow">
+   <img src="https://travis-ci.org/maskletter/tenp-render.svg?branch=master" height="18">
+</a>
+<a href="https://codeclimate.com/github/maskletter/tenp-render/maintainability">
+   <img src="https://api.codeclimate.com/v1/badges/02bad73bda6739d2d003/maintainability" />
+</a>
 
 ## 模板语法
 
@@ -149,11 +164,8 @@ const template2: string = template('template/index.are', '<div>{{name}}</div>');
 //设置模板存于内存中的失效时间
 const template3: string = template('template/index.html', undefined, 1000 * 60 * 60);
 
-//设置模板存于内存中的失效时间
-const template4: string = template('template/index.html', undefined, 1000 * 60 * 60);
-
 //设置为组件形式(组件形式会去除页面中的从跟[html]开始搜索，只保留body内的内容)
-const template5: string = template('template/index.html', undefined, 0, true);
+const template4: string = template('template/index.html', undefined, 0, true);
 
 ```
 #### 渲染模板

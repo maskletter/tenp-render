@@ -52,7 +52,7 @@ describe('htmltoJsonTree', function(){
 describe('template', function(){
 
 	it('创建虚拟模板', function(){
-	    const htmlStr = template('template/index.are', '<div></div>');
+	    const htmlStr = template('template/index.are', '<div></div>', 0);
 	});
 
 	it('创建模板', function(){

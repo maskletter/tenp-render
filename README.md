@@ -1,7 +1,7 @@
 # @tenp/render
 基于nodejs 数据模板引擎 <br>
 <a href="https://badge.fury.io/js/%40tenp%render" title="NPM Version Badge" rel="nofollow">
-   <img src="https://badge.fury.io/js/%40tenp%render.svg" height="18">
+   <img src="https://badge.fury.io/js/%40tenp%2Frender.svg" height="18">
 </a>
 <a href="https://img.shields.io/badge/node-%3E%3D6-brightgreen.svg" title="Node Limitation" rel="nofollow">
    <img src="https://img.shields.io/badge/node-%3E%3D6-brightgreen.svg" alt="npm version" height="18">

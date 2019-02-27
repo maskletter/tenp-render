@@ -14,6 +14,12 @@
   "directories": {
     "lib": "lib"
   },
+  "nyc": {
+    "exclude": [
+      "lib/htmlparser2/Parser.js",
+      "lib/htmlparser2/Tokenizer.js"
+    ]
+  },
   "author": "maskletter",
   "license": "ISC",
   "files": [
@@ -33,6 +39,6 @@
     "nyc": "^13.3.0"
   },
   "dependencies": {
-    "htmlparser2": "^3.10.1"
+    "entities": "^1.1.1"
   }
 }

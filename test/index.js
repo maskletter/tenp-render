@@ -7,7 +7,8 @@ const { render, compile, template, htmltoJsonTree, expressRender, updateConfig }
 
 describe('updateConfig', function(){
 	it('设置模板默认目录', function(){
-		updateConfig('templateUrl', 'test/template')
+		updateConfig('templateUrl', 'test/template');
+		updateConfig('isSaveFile', true)
 	})
 })
 

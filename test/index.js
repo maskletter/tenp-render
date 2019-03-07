@@ -80,7 +80,7 @@ describe('*for/*if/[attr]', function(){
 	it('*for', function(){
 	    const htmlFunStr = template('test-template1', `<h1 *for='item in list;let $index'>{{$index}}:{{item}}</h1>`)
 	    const html = compile(htmlFunStr, { list: [ '张三', '李四' ] });
-	    expect(html).to.have.string('<!DOCTYPE html><h1 >0:张三</h1><h1 >1:李四</h1>')
+	    expect(html).to.have.string('<h1 >0:张三</h1><h1 >1:李四</h1>')
 	});
 
 
@@ -91,14 +91,14 @@ describe('*for/*if/[attr]', function(){
 			<h1 *elseif='name == 3'>这是第三个</h1>
 	    `)
 	    const html = compile(htmlFunStr, { name: 3 });
-	    expect(html).to.have.string('<!DOCTYPE html><h1 >这是第三个</h1>')
+	    expect(html).to.have.string('<h1 >这是第三个</h1>')
 	});
 
 
 	it('[attr]', function(){
 	    const htmlFunStr = template('test-template3', `<h1 [status]='status'>状态:{{status}}</h1>`)
 	    const html = compile(htmlFunStr, { status: 3 });
-	    expect(html).to.have.string('<!DOCTYPE html><h1 status="3" >状态:3</h1>')
+	    expect(html).to.have.string('<h1 status="3" >状态:3</h1>')
 	});
 
 
@@ -107,7 +107,7 @@ describe('*for/*if/[attr]', function(){
 			<h1 *for='item in list;let $index' *if='$index == 1' [name]='$index' [class]="item +' box'">{{$index}}:{{item}}</h1>
 	    `)
 	    const html = compile(htmlFunStr, { list: [ 'tom', 'job' ] });
-	    expect(html).to.have.string('<!DOCTYPE html><h1 name="1" class="job box" >1:job</h1>')
+	    expect(html).to.have.string('<h1 name="1" class="job box" >1:job</h1>')
 	});
 
 })
